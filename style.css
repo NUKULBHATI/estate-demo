@@ -196,8 +196,8 @@ p { color: var(--text-secondary); }
 .nav-right { display: flex; align-items: center; gap: 22px; }
 .nav-cta { white-space: nowrap; }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; width: 26px; z-index: 950; }
-.nav-toggle span { height: 2px; background: var(--white); border-radius: 2px; transition: all 0.4s var(--ease); }
-.navbar.is-scrolled .nav-toggle span, .navbar.no-hero .nav-toggle span { background: var(--navy); }
+.nav-toggle span { height: 2px; background: var(--white); border-radius: 2px; transition: all 0.4s var(--ease); box-shadow: 0 0 3px rgba(0,0,0,0.55); }
+.navbar.is-scrolled .nav-toggle span, .navbar.no-hero .nav-toggle span { background: var(--navy); box-shadow: none; }
 
 /* Scroll progress bar */
 .scroll-progress {
@@ -245,7 +245,7 @@ p { color: var(--text-secondary); }
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(18,33,58,0.35) 0%, rgba(18,33,58,0.55) 55%, rgba(18,33,58,0.92) 100%);
+  background: linear-gradient(180deg, rgba(18,33,58,0.5) 0%, rgba(18,33,58,0.55) 55%, rgba(18,33,58,0.92) 100%);
   z-index: 1;
 }
 .hero-grain { position: absolute; inset: 0; z-index: 2; opacity: 0.5; mix-blend-mode: overlay;
